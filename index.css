@@ -1,0 +1,187 @@
+nav img {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Great Vibes", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 7px;
+}
+
+#button {
+    z-index: 45;
+    background: none;
+    border: none;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(0, 42, 82, 0.993), rgba(16, 64, 109, 0.993), rgba(157, 170, 182, 0.993));  /* rgba(7, 19, 73, 0.993), rgba(5, 62, 116, 0.993) */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.images img {
+    position: absolute;
+}
+
+.snowy-ground {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.house {
+    z-index: 25;
+    bottom: 30px;
+    left: 740px;
+    width: 450px;
+}
+
+.snowman {
+    z-index: 25;
+    right: 550px;
+    bottom: 15px;
+    width: 200px;
+}
+
+.right-tree1 {
+    z-index: 20;
+    right: 20px;
+    bottom: 100px;
+    width: 200px;
+}
+
+.right-tree2 {
+    z-index: 15;
+    right: 100px;
+    bottom: 100px;
+}
+
+.right-tree3 {
+    z-index: 15;
+    right: -100px;
+    bottom: 130px;
+    width: 250px;
+}
+
+.left-tree1 {
+    z-index: 15;
+    left: -100px;
+    width: 230px;
+    bottom: 200px;
+}
+
+.left-tree2 {
+    z-index: 20;
+    left: 10px;
+    bottom: 90px;
+    width: 200px;
+}
+
+.left-tree3 {
+    z-index: 15;
+    left: 100px;
+    bottom: 170px;
+    width: 200px;
+}
+
+.left-tree4 {
+    width: 200px;
+    bottom: 200px;
+}
+
+.moon {
+    left: 640px;
+    width: 650px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 0px transparent;
+    box-shadow: 0 0 20px 10px rgba(255, 254, 254, 0.158),
+                0 0 40px 20px rgba(255, 255, 255, 0.5),
+                0 0 60px 30px rgba(255, 255, 255, 0.3),
+                0 0 60px 30px rgba(46, 151, 236, 0.342);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+.presents {
+    z-index: 20;
+    left: 580px;
+    bottom: 20px;
+}
+
+.santa-cart {
+    z-index: 20;
+    left: 650px;
+    top: 250px;
+    width: 510px;
+    transform: rotate(-10deg);
+}
+
+.merry-xmas {
+    position: absolute;
+    color: white;
+    font-family: "Great Vibes", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 100px;
+    top: 10px;
+    left: 650px;
+}
+
+.snow-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+}
+
+.snow {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    background: white;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 5px 5px rgba(255, 254, 254, 0.158);
+    filter: blur(2px);
+    animation: fall 5s linear infinite;
+}
+
+.snow-blurry {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    background: white;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 5px 5px rgba(255, 254, 254, 0.158);
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
