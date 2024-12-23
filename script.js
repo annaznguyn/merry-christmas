@@ -12,10 +12,6 @@ function toggleAudio() {
     }
 }
 
-function share() {
-    document.getElementById("share-popup").style.display = "block";
-}
-
 function shareHover() {
     document.getElementById("heart-icon").src = "assets/images/blue-heart.png";
 }
@@ -24,10 +20,16 @@ function shareHoverOut() {
     document.getElementById("heart-icon").src = "assets/images/white-heart.png";
 }
 
+function share() {
+    var popup = document.getElementById("share-popup");
+    popup.classList.add("show");
+}
+
 function closePopup() {
     document.getElementById("copy-icon").style.display = "block";
     document.getElementById("tick-icon").style.display = "none";
-    document.getElementById("share-popup").style.display = "none";
+    var popup = document.getElementById("share-popup");
+    popup.classList.remove("show");
 }
 
 function copyLink() {

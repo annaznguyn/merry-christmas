@@ -77,6 +77,21 @@ nav a {
     height: 180px;
 }
 
+#share-popup.show {
+    display: block;
+    animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .share-content {
     display: flex;
     flex-direction: column;
