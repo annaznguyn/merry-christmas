@@ -27,6 +27,10 @@ nav a {
     border: none;
 }
 
+#my-audio {
+    z-index: 45;
+}
+
 body {
     background: linear-gradient(to bottom, rgba(0, 42, 82, 0.993), rgba(16, 64, 109, 0.993), rgba(157, 170, 182, 0.993));  /* rgba(7, 19, 73, 0.993), rgba(5, 62, 116, 0.993) */
     margin: 0;

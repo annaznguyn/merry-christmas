@@ -1,8 +1,9 @@
 function toggleAudio() {
-    const audio = document.getElementById("myaudio");
-    const icon = document.getElementById("speaker-icon");
+    var audio = document.getElementById("my-audio");
+    var icon = document.getElementById("speaker-icon");
 
     if (audio.muted) {
+        audio.play();
         audio.muted = false;
         icon.src = "assets/images/speaker-icon.png";
     } else {
@@ -12,13 +13,13 @@ function toggleAudio() {
 }
 
 function createSnow() {
-    const snow = document.createElement("div");
-    const snowBlurry = document.createElement("div");
+    var snow = document.createElement("div");
+    var snowBlurry = document.createElement("div");
     snow.classList.add("snow");
     snowBlurry.classList.add("snow-blurry");
 
-    const snowStart = Math.random() * window.innerWidth;
-    const snowBlurryStart = Math.random() * window.innerWidth;
+    var snowStart = Math.random() * window.innerWidth;
+    var snowBlurryStart = Math.random() * window.innerWidth;
     snow.style.left = `${snowStart}px`;
     snowBlurry.style.left = `${snowBlurryStart}px`;
 
