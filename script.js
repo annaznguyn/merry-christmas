@@ -12,6 +12,24 @@ function toggleAudio() {
     }
 }
 
+function share() {
+    document.getElementById("share-popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("copy-icon").style.display = "block";
+    document.getElementById("tick-icon").style.display = "none";
+    document.getElementById("share-popup").style.display = "none";
+}
+
+function copyLink() {
+    var link = "https://annaznguyn.github.io/merry-christmas/";
+    navigator.clipboard.writeText(link);
+
+    document.getElementById("copy-icon").style.display = "none";
+    document.getElementById("tick-icon").style.display = "block";
+}
+
 function createSnow() {
     var snow = document.createElement("div");
     var snowBlurry = document.createElement("div");

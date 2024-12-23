@@ -21,10 +21,105 @@ nav a {
     grid-gap: 7px;
 }
 
-#button {
+.left-nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 50px;
+}
+
+#audio-button,
+#share-button {
     z-index: 45;
     background: none;
     border: none;
+}
+
+#share-button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#share-button:hover {
+    color: rgba(72, 146, 216, 0.993);
+}
+
+.cross-button {
+    opacity: 0.5;
+    float: right;
+    margin-top: 5px;
+}
+
+.cross-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.cross-button:hover {
+    opacity: 1;
+}
+
+#share-popup {
+    display: none;
+    position: fixed;
+    z-index: 45;
+    border: 1px solid black;
+    border-radius: 20px;
+    left: 40%;
+    top: 40%;
+    background: white;
+    width: 400px;
+    height: 180px;
+}
+
+.share-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart-img {
+    width: 20px;
+    height: 20px;
+}
+
+.share-message {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.share-link {
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-flow: column;
+    margin-left: 25px;
+}
+
+.share-link p {
+    border: 1px solid rgb(165, 165, 165);
+    padding: 10px;
+    border-radius: 20px;
+    width: 285px;
+    height: 19px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#copy-icon:hover {
+    fill: grey; 
+}
+
+#share-popup button {
+    border: none;
+    background: none;
+}
+
+#tick-icon {
+    width: 16px;
+    height: 16px;
+    
 }
 
 #my-audio {
