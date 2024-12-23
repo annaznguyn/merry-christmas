@@ -19,7 +19,10 @@
                     Christmas
                 </a>
                 <div class="left-nav">
-                    <button id="share-button" type="button" onclick="share()">Share</button>
+                    <button id="share-button" type="button" onclick="share()" onmouseover="shareHover()" onmouseout="shareHoverOut()">
+                        Share
+                        <img id="heart-icon" src="assets/images/white-heart.png">
+                    </button>
                     <div id="share-popup">
                         <button class="cross-button" onclick="closePopup()">
                             <img src="assets/images/cross.png">

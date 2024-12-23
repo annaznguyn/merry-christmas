@@ -40,6 +40,11 @@ nav a {
     font-size: 20px;
 }
 
+#share-button img {
+    width: 20px;
+    height: 20px;
+}
+
 #share-button:hover {
     color: rgba(72, 146, 216, 0.993);
 }
@@ -124,6 +129,11 @@ nav a {
 
 #my-audio {
     z-index: 45;
+}
+
+#speaker-icon {
+    width: 20px;
+    height: 20px;
 }
 
 body {
