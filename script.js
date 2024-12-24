@@ -59,4 +59,4 @@ function createSnow() {
     }, 10000);
 }
 
-setInterval(createSnow, 200);
+setInterval(createSnow, 150);
